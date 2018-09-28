@@ -1,0 +1,508 @@
+/*
+ * normal style
+ */
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+    margin: 0;
+    font:12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+    background: #fff
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+i {
+    font-style: normal;
+}
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+b,
+strong {
+    font-weight: bolder;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+img {
+    border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+button,
+input { /* 1 */
+    overflow: visible;
+}
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+ol, ul {
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.w {
+    width: 990px;
+    margin: 0 auto;
+}
+.m-w {
+    max-width: 990px;
+    margin: 0 auto;
+}
+.clearfix {
+    overflow:auto;
+    _height:1%
+}
+.green {
+    color: #439e1b;
+    font-size: 12px;
+}
+.red {
+    color: #e4393c;
+}
+.clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+/*
+ * recharge style
+ *
+*/
+
+.recharge-header {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #e3e4e5;
+    border-bottom: solid 1px #ddd;
+}
+.recharge-header-c {
+    color: #999;
+    background: #e3e4e5;
+    padding: 0 20px;
+}
+.recharge-header-c li {
+    height: 30px;
+    padding: 0 2px;
+}
+.recharge-header-c .index {
+    float: left;
+}
+.recharge-header-c .order {
+    float: right;
+}
+.recharge-header-c a {
+    color: #999;
+}
+.recharge-logo {
+    height: 60px;
+    padding-top: 20px;
+}
+.recharge-logo s {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 79px;
+    height: 53px;
+    background: url('../assets/img/logo.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.recharge-breadcrumb {
+    font-size: 14px;
+    padding: 10px 0 10px;
+    color: #333;
+}
+.recharge-breadcrumb .crumbs-arrow {
+    margin: 0 10px;
+}
+.recharge-contanier {
+    border: 1px solid #d3d8df;
+    overflow: hidden;
+    padding-left: 26px;
+    _height: 700px;
+    _position: relative;
+    left: -8px;
+    margin-bottom: 40px;
+}
+.cont-box-left {
+    width: 585px;
+    padding: 34px 0 0;
+    padding-right: 32px;
+}
+.form-item {
+    overflow: hidden;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.form-itemName.phone {
+    height: 30px;
+    line-height: 30px;
+}
+.form-itemName {
+    color: #333;
+    float: left;
+    width: 71px;
+    display: inline-block;
+    font-size: 14px;
+    height: 25px;
+}
+.phoneLabel{
+    height: 30px;
+    line-height: 30px;
+}
+.phoneContainer{
+    position: relative;
+    width: 500px;
+}
+.phoneContainer input {
+    font-family: "Arial Black";
+    height: 28px;
+    line-height: 28px;
+    width: 215px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 8px;
+}
+.phoneContainer .area {
+    display: inline-block;
+    position: absolute;
+    left: 160px;
+    top: 6px;
+    color: #999;
+}
+.phoneContainer .errorTip {
+    color: #e4393c;
+    padding-top: 4px;
+    display: none;
+}
+.phoneContainer .icon-error {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/check.png) no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+.editProduct {
+    color: #005ea7;
+    margin-left: 22px;
+}
+#rechargeItem {
+    height: 27px;
+}
+.phoneItem {
+    margin-bottom: 30px;
+    _padding-bottom: 30px;
+}
+#errorPrice {
+    color: #f80;
+    font-size: 12px;
+    display: none;
+}
+.payType-select input {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.payType-select label {
+    margin-right: 20px;
+}
+#submitItem {
+    padding-bottom: 36px;
+    margin-bottom: 0;
+    border-top: 1px solid #EEE;
+    padding-top: 60px;
+    margin-top: 95px;
+}
+.recharge-submit{
+    float: right;
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    width: 136px;
+    height: 36px;
+    background: #e54043;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    _line-height: 26px;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+#submitItem .red{
+    font-family: Verdana;
+    font-size: 24px;
+}
+.price-desc-tip {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    height: 20px;
+    background: url('../assets/img/desc-icon.png') 0 0 no-repeat;
+    line-height: 20px;
+    margin-left: 2px;
+    color: #005ea7;
+    font-size: 12px;
+}
+.price-desc-tip s {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.cont-box-right {
+    width: 304px;
+    border-left: 1px solid #DDD;
+    height: 638px;
+    padding: 0 20px;
+    margin-top: 23px;
+    margin-bottom: 18px;
+}
+.cont-box-right dt{
+    font-weight: 700;
+    height: 35px;
+    line-height: 45px;
+}
+.cont-box-right dd {
+    line-height: 26px;
+    color: #666;
+    position: relative;
+    padding-left: 13px;
+}
+.cont-box-right dd i{
+    position: absolute;
+    left: 0;
+    _left: -10px;
+    top: 0;
+    *top: -5px;
+    font-style: normal;
+}
+.cont-box-right .fore dd {
+    color: #999;
+}
+#sidebar{
+    width: 56px;
+    top: 365px;
+    right: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+#sidebar #ddservice {
+    height: 90px;
+    background: #ccc;
+    border-bottom: 1px solid #FFF;
+    position: relative;
+}
+#sidebar #serviceTel {
+    height: 56px;
+    background: #ccc;
+    position: relative;
+}
+#sidebar #ddservice s {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../assets/img/serv.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+}
+#sidebar #ddservice span {
+    display: inline-block;
+    width: 25px;
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+}
+#sidebar #serviceTel s {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url('../assets/img/telphone.png') no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+}
+#sidebar #serviceTel b {
+    position: absolute;
+    border-color: transparent transparent transparent gray;
+    border-width: 4px;
+    border-style: solid;
+    left: -4px;
+    top: 26px;
+    z-index: 4;
+    display: none;
+    width: 0;
+    height: 0;
+}
+#sidebar #serviceTel .hotTel {
+    position: absolute;
+    right: 55px;
+    background-color: gray;
+    width: 130px;
+    padding: 10px;
+    color: #FFF;
+    display: none;
+    border-right: 5px solid #FFF;
+    z-index: 2;
+}
