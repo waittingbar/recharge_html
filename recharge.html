@@ -11,12 +11,12 @@
         <div class="m-w recharge-header-c clearfix">
             <ul class="fl">
                 <li class="index">
-                    <a href="/">菲速充首页</a>
+                    <a href="./recharge.html">菲速充首页</a>
                 </li>
             </ul>
             <ul class="fr">
                 <li class="order">
-                    <a href="">我的订单</a>
+                    <a href="/orderList">我的订单</a>
                 </li>
             </ul>
         </div>
@@ -30,7 +30,7 @@
             <i class="crumbs-arrow">></i>
             <span>确认信息</span>
         </div>
-        <form action="">
+        <form action="./recharge_success.html">
             <div class="recharge-contanier">
                 <div class="fl cont-box-left">
                     <div class="form-item phoneItem">
@@ -50,18 +50,19 @@
                         <div id="productFace" style="display: block;">
                             <span _val="20">20.00</span>
                             <a href="javascript:;" class="editProduct">修改</a>
+                            <input type="hidden" name="money" id="money" value="20">
                         </div>
 
                         <div class="productList hide" style="display: none;">
                             <ul>
+                                <li _val="500">500元<s></s></li>
                                 <li _val="300">300元<s></s></li>
+                                <li _val="200">200元<s></s></li>
                                 <li _val="100">100元<s></s></li>
                                 <li _val="50">50元<s></s></li>
                                 <li _val="30">30元<s></s></li>
-                                <li _val="500">500元<s></s></li>
-                                <li _val="200">200元<s></s></li>
                                 <li _val="20" class="curr">20元<s></s></li>
-                                <li _val="10" style="display: none;">10元<s></s></li>
+                                <li _val="10">10元<s></s></li>
                             </ul>
 
                         </div>
@@ -82,10 +83,12 @@
                         </div>
                     </div>
                     <div class="form-item" id="submitItem">
-                        <input type="button" value="提交订单" class="recharge-submit">
-                        <span class="fr">
+                        <input type="submit" onclick="submit" value="提交订单" class="recharge-submit">
+                        <span class="fr rely-m-span">
                         应付总额：<i class="red">￥49.95</i>
-                    <a class="price-desc-tip" href="javascript:;" data-tips="因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。"><s></s>价格说明</a></span>
+                            <a class="price-desc-tip" href="javascript:;"><s></s>价格说明 <div class="desc-tips-box"><div
+                                    class="desc-tips-text">因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。</div><span
+                                    class="ui-tips-arrow" style="z-index:101"></span></div></a></span>
                     </div>
                 </div>
                 <div class="fr cont-box-right">
@@ -96,7 +99,8 @@
                         <dd><i>·</i>充值金额可能会分多次到账。</dd>
                         <dd><i>·</i>本充值不参加当地运营商活动。</dd>
                         <dd><i>·</i>支持全国各省市（不包括港、澳、台地区）。</dd>
-                        <dd><i>·</i>京东手机充值业务发票是由运营商提供，用户充值成功后，可到当地运营商营业厅打印上月的实际消费发票。因各运营商规定不同，充值前请咨询当地营业厅关于发票获取的政策，或拨打运营商客服电话咨询。</dd>
+                        <dd><i>·</i>京东手机充值业务发票是由运营商提供，用户充值成功后，可到当地运营商营业厅打印上月的实际消费发票。因各运营商规定不同，充值前请咨询当地营业厅关于发票获取的政策，或拨打运营商客服电话咨询。
+                        </dd>
                         <dd><i>.</i>充值历史记录最多展示6条</dd>
                         <dd><i>·</i>充值定向京券面额大于订单金额部分不找零、不退还。</dd>
                         <dd><i>·</i>手机充值定向东券每次只可使用一张，当订单中充值总额满足东券使用限额才能使用，按东券面值减免支付。</dd>
@@ -104,7 +108,7 @@
                     </dl>
                     <dl>
                         <dt>客户服务</dt>
-                        <dd>·客服电话：400-616-5500&nbsp;|&nbsp;0527-88205500</dd>
+                        <dd>·客服电话：123-123-1234&nbsp;|&nbsp;1234-12345678</dd>
                         <dd>·服务时间：9:00-21:00
                             <div id="orderTmDiv">
                                 <a class="im2013" href="#" title="联系客服"><strong>菲速充在线客服</strong></a>
@@ -117,8 +121,43 @@
         </form>
     </div>
 </div>
-<div id="sidebar"><div id="ddservice"><s></s><span>在线客服</span></div><div id="serviceTel"><s></s><b class="arrow"></b><div class="hotTel"><p>4006115718&nbsp;&nbsp;充值客服</p><p>4006065500&nbsp;&nbsp;菲速充客服</p></div></div></div>
-<script type="application/javascript" src="./js/recharge.js"></script>
-<script type="application/javascript" src="./js/jquery.min.js"></script>
+<div id="sidebar">
+    <a target="_blank" href="https://cschat-ccs.aliyun.com/index.htm?tntInstId=_0xvk1DM&scene=SCE00002799">
+        <div id="ddservice" onclick="goLineServer"><s></s><span>在线客服</span></div>
+    </a>
+    <div id="serviceTel">
+        <s></s><b class="arrow"></b>
+        <div class="hotTel">
+            <p>1234567890&nbsp;&nbsp;充值客服</p>
+            <p>1234567890&nbsp;&nbsp;菲速充客服</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/recharge.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#productFace a").click(function () {
+            $("#productFace").hide();
+            $('.productList').show();
+        });
+        $(".productList ul li").click(function () {
+            var thisMoney = $(this).attr('_val');
+            $(".productList ul").find("li").removeClass('curr');
+            $(this).addClass('curr');
+            $("#money").val(thisMoney)
+            $('.productList').hide();
+            $("#productFace").find("span").attr('_val', thisMoney).text(thisMoney);
+            $("#productFace").show();
+        })
+    });
+</script>
+<script type="text/javascript" charset="utf-8"
+        src="https://gw.alipayobjects.com/os/rmsportal/xsxusXNIcXwiGqtNiyOd.js"
+        chat_url="https://cschat-ccs.aliyun.com/index.htm"
+        logo_src="https://i.alipayobjects.com/e/201401/1tdi7nR70h.png"
+        logo_position="rt"
+        tntInstId="_0xvk1DM&scene=SCE00002799">
+</script>
 </body>
 </html>

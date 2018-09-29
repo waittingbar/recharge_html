@@ -245,6 +245,9 @@ ol, ul {
 .recharge-header-c a {
     color: #999;
 }
+.recharge-header-c a:hover{
+    color: #f30213;
+}
 .recharge-logo {
     height: 60px;
     padding-top: 20px;
@@ -360,14 +363,15 @@ ol, ul {
     margin-right: 20px;
 }
 #submitItem {
-    padding-bottom: 36px;
+    padding-bottom: 150px;
     margin-bottom: 0;
     border-top: 1px solid #EEE;
     padding-top: 60px;
-    margin-top: 95px;
+    margin-top: 42px;
 }
 .recharge-submit{
     float: right;
+    margin-right: 5px;
     font-size: 18px;
     font-family: 'Microsoft YaHei';
     font-weight: 700;
@@ -387,6 +391,7 @@ ol, ul {
     font-size: 24px;
 }
 .price-desc-tip {
+    position: relative;
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -397,6 +402,9 @@ ol, ul {
     margin-left: 2px;
     color: #005ea7;
     font-size: 12px;
+}
+.price-desc-tip:hover .desc-tips-box {
+    display: block;
 }
 .price-desc-tip s {
     display: inline-block;
@@ -456,6 +464,12 @@ ol, ul {
     background: #ccc;
     position: relative;
 }
+#sidebar #serviceTel:hover, #sidebar #ddservice:hover {
+    background-color: gray;
+}
+#sidebar #serviceTel:hover .hotTel {
+    display: block;
+}
 #sidebar #ddservice s {
     display: inline-block;
     width: 30px;
@@ -499,10 +513,178 @@ ol, ul {
     position: absolute;
     right: 55px;
     background-color: gray;
-    width: 130px;
+    width: 135px;
     padding: 10px;
     color: #FFF;
     display: none;
     border-right: 5px solid #FFF;
     z-index: 2;
+}
+.cont-box-left .productList ul{
+    overflow: hidden;
+}
+.cont-box-left .productList ul li {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 50px;
+    border: 1px solid #ddd;
+    margin: 0 10px 0 0;
+    position: relative;
+    cursor: pointer;
+}
+.cont-box-left .productList ul li s {
+    background: url('../assets/img/check.png') no-repeat;
+    background-position: 0 -26px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    _top: 20px;
+    _right: -1px;
+}
+.cont-box-left .productList ul .curr {
+    border: 2px solid #e4393c;
+    height: 23px;
+    line-height: 23px;
+    width: 48px;
+}
+.cont-box-left .productList ul .curr s {
+    display: inline-block;
+}
+.desc-tips-box {
+    display: none;
+    z-index: 101;
+    top: 30px;
+    left: 5px;
+    width: 180px;
+    position: absolute;
+    padding: 10px;
+    padding-right: 14px;
+    background: #fffdee;
+    border: 1px solid #edd28b;
+    -moz-box-shadow: 0 0 2px 2px #eee;
+    -webkit-box-shadow: 0 0 2px 2px #eee;
+    box-shadow: 0 0 2px 2px #eee;
+}
+.ui-tips-arrow {
+    left: 10px;
+    right: auto;
+    top: -6px;
+    display: block;
+    position: absolute;
+    background-image: url('../assets/img/tips.gif');
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 6px;
+    background-position: 0 0;
+    overflow: hidden;
+}
+.desc-tips-text {
+    color: #666;
+}
+.rely-m-span {
+    height: 36px;
+    line-height: 36px;
+}
+
+/*充值成功*/
+.main {
+    background: url('../assets/img/paymentbg02.jpg') top center no-repeat;
+    margin-bottom: 15px!important;
+    padding-bottom: 50px!important;
+    font-family: Arial,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Hiragino Sans GB,\\5B8B\4F53;
+}
+.w-porm-result {
+    padding-top: 20px;
+    width: 100%;
+}
+.porm-result-area .pay-result-infor-box {
+    width: 370px;
+    height: 500px;
+    background-color: #fff;
+    /*float: left;*/
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0,36,84,.15);
+}
+.porm-result-area .pay-result-infor-box .result-infor-con {
+    padding-left: 54px;
+    padding-right: 40px;
+    padding-top: 35px;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con h3 {
+    display: block;
+    background: url('../assets/img/result-success.png') no-repeat;
+    width: 41px;
+    height: 41px;
+    margin-bottom: 10px;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con .success-text {
+    font-size: 22px;
+    color: #3fd09e;
+    font-weight: 700;
+    line-height: 32px;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con .infor-kv-box {
+    padding-top: 13px;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con .infor-kv-box ul li {
+    margin-bottom: 11px;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con .infor-kv-box ul li .key {
+    float: left;
+    color: #666;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con .infor-kv-box ul li .val {
+    float: left;
+    color: #333;
+}
+.porm-result-area .pay-result-infor-box .result-infor-con .other-operation {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+}
+
+.porm-result-area .pay-result-infor-box .result-infor-con .other-operation a {
+    color: #59aaf9;
+    transition: .1s ease all
+}
+
+.porm-result-area .pay-result-infor-box .result-infor-con .other-operation a:hover {
+    color: #ff5256
+}
+
+.porm-result-area .pay-result-infor-box .result-infor-con .other-operation .line {
+    width: 1px;
+    height: 10px;
+    background-color: #ededed;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px
+}
+
+.porm-result-area .pay-result-infor-box .result-infor-con .main-tips-text {
+    color: #999;
+    line-height: 22px;
+    padding-top: 12px;
+    margin-bottom: 3px
+}
+
+.porm-result-area .pay-result-infor-box .prb-promtion {
+    width: 310px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.porm-result-area .pay-result-infor-box .prb-promtion .prb-promotion-item-wrap {
+    display: inline-block;
+    width: 295px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
 }
