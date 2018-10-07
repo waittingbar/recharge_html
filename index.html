@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>菲速充首页</title>
     <link rel="stylesheet" href="./css/recharge.css">
+    <link rel="stylesheet" href="./css/czk.css">
 </head>
 <body>
 <div class="recharge-content">
@@ -43,7 +44,7 @@
             </ul>
         </div>
     </div>
-    <div class="w">
+    <div class="w" style="position: relative">
         <div class="content">
             <div class="fl leftMenu">
                 <ul>
@@ -75,7 +76,7 @@
                         </ul>
                     </div>
                     <p style="font-size: 16px;margin-top: 10px;">订单完成后订单详情页可查看商家信息</p>
-                    <div class="cz-iframe show" _flag="1">
+                    <div class="cz-iframe" _flag="1">
                         <div style="width: 753px; height: 492px">
                             <div id="chongzhi">
                                 <div class="item" id="phoneitem">
@@ -138,24 +139,23 @@
                                     <div>
                                         <div class="fore">
                                             <label for="sms">
-                                                <input type="checkbox" class="fl" id="sms">给TA捎句话吧
-
+                                                <input type="checkbox" name="sms" class="fl" id="sms">给TA捎句话吧
                                             </label>
                                             <div class="fr " id="username">
                                                 <span>您的姓名：</span>
-                                                <input type="text" value="选填" class="username gray" maxlength="5">
+                                                <input type="text" placeholder="选填" class="username gray" maxlength="5">
                                             </div>
                                         </div>
-                                        <textarea maxlength="34" id="inputMessageArea" class="gray">请输入你想对TA说的话（充值成功后会短信发至充值手机），最多34字哦</textarea>
+                                        <textarea maxlength="30" id="inputMessageArea" class="gray" placeholder="请输入你想对TA说的话（充值成功后会短信发至充值手机），最多30字哦"></textarea>
                                     </div>
                                 </div>
-                                <div class="item" id="submitItem2">
+                                <div class="item" id="submitItem2" style="overflow: inherit">
                                     <span class="itemName"></span>
                                     <div>
-                                        <input type="button" class="submit" value="立即充值"
-                                               clstag="pageclick|keycount|new_201511197|1">
-                                        <a class="price-desc-tip" href="javascript:;"
-                                           data-tips="因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。"><i></i>价格说明</a>
+                                        <input type="button" class="submit" value="立即充值">
+                                        <a class="price-desc-tip" href="javascript:;"><i></i>价格说明<div class="desc-tips-box" style="width: 273px"><div
+                                                class="desc-tips-text">因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。</div><span
+                                                class="ui-tips-arrow" style="z-index:101"></span></div></a>
                                     </div>
                                 </div>
 
@@ -163,9 +163,58 @@
                         </div>
                         <!--<iframe width="753px" height="492px" scrolling="no" id="fast-cziframe" frameborder="0" src="//chongzhi.jd.com/iframe_fast.action"></iframe>-->
                     </div>
-                    <div class="cz-iframe"></div>
-                    <div class="cz-iframe"></div>
-                    <div class="cz-iframe"></div>
+                    <div class="cz-iframe show" _flag="1">
+                        <div style="width: 753px; height: 492px">
+                            <div id="kami">
+                                <div class="item" id="kOperators">
+                                    <div class="item-tit">运营商：</div>
+                                    <div class="item-con">
+                                        <span class="unit unit-cur" id="cMobile" brandcode="3">中国移动</span>
+                                        <span class="unit" id="cUnicom" brandcode="1">中国联通</span>
+                                        <span class="unit" id="cTelecom" brandcode="2">中国电信</span>
+                                    </div>
+                                </div>
+                                <div class="item" id="kValue">
+                                    <div class="item-tit">充值卡面值：</div>
+                                    <div class="item-con">
+                                        <span class="unit" _val="300">300元</span>
+                                        <span class="unit unit-cur" _val="100">100元</span>
+                                        <span class="unit" _val="50">50元</span>
+                                        <span class="unit" _val="30">30元</span>
+                                        <span class="unit" _val="500">500元</span>
+                                        <span class="unit" id="unit200" _val="200" style="display: none;">200元</span>
+                                        <span class="unit" _val="20">20元</span>
+                                        <span class="unit" id="unit10" _val="10" style="display: none;">10元</span>
+                                    </div>
+                                </div>
+                                <div class="item" id="kPrice">
+                                    <div class="item-tit">销售价格：</div>
+                                    <div class="item-con">暂无</div>
+                                </div>
+                                <div class="item" id="kCount">
+                                    <div class="item-tit">购买数量：</div>
+                                    <div class="item-con">
+                                        <span class="counter">
+                                            <span class="reduce disabled" onselectstart="return false;" style="-moz-user-select:   none;">-</span>
+                                            <input class="num" value="1" curnum="" readonly="readonly">
+                                            <span class="add disabled" onselectstart="return false;" style="-moz-user-select:   none;">+</span>
+                                        </span>
+                                        <span class="counter-tips"></span>
+                                        <span class="err-msg err-hide"><i class="err-icon"></i><span class="err-txt"></span></span>
+                                    </div>
+                                </div>
+                                <div class="item" id="kBuy">
+                                    <div class="item-tit"></div>
+                                    <div class="item-con">
+                                        <a href="#none" class="btn-buy disabled">立即购买</a>
+                                        <a href="#none" class="tips-txt" data-tips="因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。" data-width="250"><i class="tips-icon"></i>价格说明</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cz-iframe" _flag="1"></div>
+                    <div class="cz-iframe" _flag="1"></div>
                 </div>
 
                 <div class="detailContent fore2  hide ">
@@ -199,17 +248,17 @@
 
         </div>
 
-    </div>
-</div>
-<div id="sidebar">
-    <a target="_blank" href="https://cschat-ccs.aliyun.com/index.htm?tntInstId=_0xvk1DM&scene=SCE00002799">
-        <div id="ddservice" onclick="goLineServer"><s></s><span>在线客服</span></div>
-    </a>
-    <div id="serviceTel">
-        <s></s><b class="arrow"></b>
-        <div class="hotTel">
-            <p>1234567890&nbsp;&nbsp;充值客服</p>
-            <p>1234567890&nbsp;&nbsp;菲速充客服</p>
+        <div id="sidebar" style="position: absolute; right: -56px; top: ;">
+            <a target="_blank" href="https://cschat-ccs.aliyun.com/index.htm?tntInstId=_0xvk1DM&scene=SCE00002799">
+                <div id="ddservice" onclick="goLineServer"><s></s><span>在线客服</span></div>
+            </a>
+            <div id="serviceTel">
+                <s></s><b class="arrow"></b>
+                <div class="hotTel">
+                    <p>1234567890&nbsp;&nbsp;充值客服</p>
+                    <p>1234567890&nbsp;&nbsp;菲速充客服</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -238,6 +287,16 @@
                     $(".phoneContainer-1 .errorTip").show();
                 }
             }
+        });
+        $("#sms").click(function () {
+           var type = $(this).prop('checked');
+           if(type) {
+               $("#username").show();
+               $("#chongzhi .sms textarea").show();
+           }else {
+               $("#username").hide();
+               $("#chongzhi .sms textarea").hide();
+           }
         });
         $("#productFace a").click(function () {
             $("#productFace").hide();
