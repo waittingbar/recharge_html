@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>菲速充首页</title>
-    <link rel="stylesheet" href="./css/recharge.css">
-    <link rel="stylesheet" href="./css/czk.css">
+    <link rel="stylesheet" href="./css/recharge.css?v=1.00">
+    <link rel="stylesheet" href="./css/czk.css?v=1.00">
+    <link rel="stylesheet" href="./css/many.css?v=1.00">
+    <link rel="stylesheet" href="./css/liuliang.css?v=1">
 </head>
 <body>
 <div class="recharge-content">
@@ -48,36 +50,37 @@
         <div class="content">
             <div class="fl leftMenu">
                 <ul>
-                    <li class="fore1 bussType  curr"><s></s>话费充值</li>
-                    <li class="fore2 bussType"><s></s>流量充值</li>
-                    <li class="fore5 bussType"><s></s>套餐变更</li>
-                    <li class="fore3 bussType"><s></s>水电煤缴费</li>
-                    <li class="fore4 bussType"><s></s>游戏充值</li>
+                    <li _type="fore1" class="bussType curr"><s></s>话费充值</li>
+                    <li _type="fore2" class="bussType"><s></s>流量充值</li>
+                    <!--<li _type="fore3" class="bussType"><s></s>套餐变更</li>-->
+                    <!--<li _type="fore4" class="bussType"><s></s>水电煤缴费</li>-->
+                    <!--<li class="fore4 bussType"><s></s>游戏充值</li>-->
                 </ul>
             </div>
 
             <div class="fr bussContent">
-                <div class="detailContent fore1 ">
+                <div class="detailContent fore1 "   >
                     <div class="cznav">
                         <s class="renzheng"></s>
                         <span class="desc">品质保证&nbsp;&nbsp;安全快捷</span>
-                        <ul class="fr cztype">
+                        <ul class="fr cztype" id="menu-hfcz">
                             <li class="fore1  curr " _type="recharge">话费快充<s></s></li>
                             <li class="fore10 " _type="kami">
                                 充值卡
                                 <s></s>
                             </li>
                             <li class="fore2 " _type="many">多人充值<s></s></li>
-                            <li class=" " _type="fixtime">
-                                定期充值
-                                <i></i>
-                                <s></s>
-                            </li>
+                            <!--<li class=" " _type="fixtime">-->
+                                <!--定期充值-->
+                                <!--<i></i>-->
+                                <!--<s></s>-->
+                            <!--</li>-->
                         </ul>
                     </div>
                     <p style="font-size: 16px;margin-top: 10px;">订单完成后订单详情页可查看商家信息</p>
-                    <div class="cz-iframe" _flag="1">
+                    <div class="cz-iframe show" id="cz-iframe1" _flag="1">
                         <div style="width: 753px; height: 492px">
+                            <form action="/" method="post" name="chongzhiFrom" target="_blank">
                             <div id="chongzhi">
                                 <div class="item" id="phoneitem">
                                     <span class="itemName">手机号码：</span>
@@ -111,7 +114,6 @@
                                 </div>
                                 <div class="item" id="rechargeItem2">
                                     <span class="itemName">充值面值：</span>
-
                                     <div class="productList">
                                         <ul>
                                             <li _val="300">300元<s></s></li>
@@ -152,18 +154,18 @@
                                 <div class="item" id="submitItem2" style="overflow: inherit">
                                     <span class="itemName"></span>
                                     <div>
-                                        <input type="button" class="submit" value="立即充值">
+                                        <input type="button" class="submit" value="立即充值1">
                                         <a class="price-desc-tip" href="javascript:;"><i></i>价格说明<div class="desc-tips-box" style="width: 273px"><div
                                                 class="desc-tips-text">因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。</div><span
                                                 class="ui-tips-arrow" style="z-index:101"></span></div></a>
                                     </div>
                                 </div>
-
                             </div>
+                            </form>
                         </div>
                         <!--<iframe width="753px" height="492px" scrolling="no" id="fast-cziframe" frameborder="0" src="//chongzhi.jd.com/iframe_fast.action"></iframe>-->
                     </div>
-                    <div class="cz-iframe show" _flag="1">
+                    <div class="cz-iframe" id="cz-iframe2" _flag="1">
                         <div style="width: 753px; height: 492px">
                             <div id="kami">
                                 <div class="item" id="kOperators">
@@ -173,6 +175,7 @@
                                         <span class="unit" id="cUnicom" brandcode="1">中国联通</span>
                                         <span class="unit" id="cTelecom" brandcode="2">中国电信</span>
                                     </div>
+                                    <input type="hidden" name="yunyinshang" value="3">
                                 </div>
                                 <div class="item" id="kValue">
                                     <div class="item-tit">充值卡面值：</div>
@@ -186,6 +189,7 @@
                                         <span class="unit" _val="20">20元</span>
                                         <span class="unit" id="unit10" _val="10" style="display: none;">10元</span>
                                     </div>
+                                    <input type="hidden" name="mianzhi" value="100">
                                 </div>
                                 <div class="item" id="kPrice">
                                     <div class="item-tit">销售价格：</div>
@@ -196,7 +200,7 @@
                                     <div class="item-con">
                                         <span class="counter">
                                             <span class="reduce disabled" onselectstart="return false;" style="-moz-user-select:   none;">-</span>
-                                            <input class="num" value="1" curnum="" readonly="readonly">
+                                            <input class="num" value="1" curnum="">
                                             <span class="add disabled" onselectstart="return false;" style="-moz-user-select:   none;">+</span>
                                         </span>
                                         <span class="counter-tips"></span>
@@ -207,14 +211,127 @@
                                     <div class="item-tit"></div>
                                     <div class="item-con">
                                         <a href="#none" class="btn-buy disabled">立即购买</a>
-                                        <a href="#none" class="tips-txt" data-tips="因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。" data-width="250"><i class="tips-icon"></i>价格说明</a>
+                                        <a class="price-desc-tip" href="javascript:;"><i></i>价格说明<div class="desc-tips-box" style="width: 273px"><div
+                                                class="desc-tips-text">因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。</div><span
+                                                class="ui-tips-arrow" style="z-index:101"></span></div></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="cz-iframe" _flag="1"></div>
-                    <div class="cz-iframe" _flag="1"></div>
+                    <div class="cz-iframe" id="cz-iframe3" _flag="1">
+                        <div style="width: 753px; height: 492px">
+                            <form action="/" method="post" name="placeOrderFrom" target="_blank">
+                                <div id="many">
+                                    <div class="item" id="phoneitem2">
+                                        <span class="itemName">手机号码：</span>
+
+                                        <ul class="links">
+                                            <li style="z-index: 10;">
+                                                <div class="fl phoneContainer-2" _type="many">
+                                                    <input type="text" class="mobile gray" maxlength="11" autocomplete="off"><br>
+                                                    <span class="area">
+                                                        <s class="icon-right"></s>
+                                                        <span>北京移动</span>
+                                                    </span>
+                                                                                <s class="icon-bookmark"></s>
+                                                                                <span class="errorTip">
+                                                        <s class="icon-error"></s>
+                                                        <span>请输入11位正确手机号码</span>
+                                                    </span>
+                                                    <div class="record"></div>
+                                                </div>
+                                                <div class="productList fl">
+                                                    <span class="mianzhi">面值 100元</span>
+                                                    <i class="i-down">
+                                                        <s>◇</s>
+                                                    </i>
+                                                    <ul class="moreProduct hide" style="display: none;">
+                                                        <li>100元</li>
+                                                        <li>10元</li>
+                                                        <li>20元</li>
+                                                        <li>30元</li>
+                                                        <li>50元</li>
+                                                        <li>200元</li>
+                                                        <li>300元</li>
+                                                        <li>500元</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="productPrice fl">
+                                                    销售：<span class="red">--</span>
+                                                </div>
+                                            </li>
+                                            <li style="z-index: 9;">
+                                                <div class="fl phoneContainer-2" _type="many">
+                                                    <input type="text" class="mobile gray" maxlength="11" autocomplete="off"><br>
+                                                    <span class="area">
+                                                        <s class="icon-right"></s>
+                                                        <span>北京移动</span>
+                                                    </span>
+                                                                                <s class="icon-bookmark"></s>
+                                                                                <span class="errorTip">
+                                                        <s class="icon-error"></s>
+                                                        <span>请输入11位正确手机号码</span>
+                                                    </span>
+                                                    <div class="record"></div>
+                                                </div>
+                                                <div class="productList fl">
+                                                    <span class="mianzhi">面值 100元</span>
+                                                    <i class="i-down">
+                                                        <s>◇</s>
+                                                    </i>
+                                                    <ul class="moreProduct hide" style="display: none;">
+                                                        <li>100元</li>
+                                                        <li>10元</li>
+                                                        <li>20元</li>
+                                                        <li>30元</li>
+                                                        <li>50元</li>
+                                                        <li>200元</li>
+                                                        <li>300元</li>
+                                                        <li>500元</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="productPrice fl">
+                                                    销售：<span class="red">--</span>
+                                                </div>
+                                            </li></ul>
+
+                                        <div class="addLink">
+                                            <div id="addLink">
+                                                <input value="+添加号码" readonly="true">
+                                                <span>共2个号码，最多可添加10个号码</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item" id="priceItem2">
+                                        <span class="itemName">应付总价：</span>
+
+                                        <div class="salePrice">
+                                            ￥<div id="totalPrice" class="">0.00</div>
+                                            <s class="warn"></s>
+                                            <span class="errorMsg">抱歉！支持最高限额1000元，您已超出支付限额。</span>
+                                            <span class="warnTips">支持最高限额1000元</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="item" id="submitItem">
+                                        <span class="itemName"></span>
+                                        <div>
+                                            <input type="button" class="submit" value="立即充值">
+                                            <a class="price-desc-tip" href="javascript:;"><i></i>价格说明<div class="desc-tips-box" style="width: 273px"><div
+                                                    class="desc-tips-text">因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。</div><span
+                                                    class="ui-tips-arrow" style="z-index:101"></span></div></a>
+                                            <!--<a class="price-desc-tip" href="javascript:;"><i></i>价格说明</a></div>-->
+                                    </div>
+                                </div>
+                                <input type="hidden" name="mobileSku">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cz-iframe" id="cz-iframe4" _flag="1"></div>
                 </div>
 
                 <div class="detailContent fore2  hide ">
@@ -223,17 +340,82 @@
                         <span class="desc">品质保证&nbsp;&nbsp;安全快捷</span>
                     </div>
                     <p style="font-size: 16px;margin-top: 10px;">订单完成后订单详情页可查看商家信息</p>
-                    <iframe width="753px" height="492px" scrolling="no" id="flowiframe" frameborder="0" src=""></iframe>
-                </div>
-                <div class="detailContent fore5  hide ">
-                    <iframe width="803px" height="622px" scrolling="no" id="packageiframe" frameborder="0"
-                            src=""></iframe>
+                    <div style="height: 492px; width: 753px">
+                        <div id="llchongzhi">
+                            <div class="item" id="llphoneitem">
+                                <span class="itemName">手机号码：</span>
+
+                                <div class="fl phoneContainer-1 " _type="flow">
+                                    <input type="text" class="mobile gray" maxlength="11" value="请输入手机号" autocomplete="off"><br>
+                                    <span class="area">
+                                        <s class="icon-right"></s>
+                                        <span></span>
+                                    </span>
+                                                        <s class="icon-bookmark"></s>
+                                                        <span class="errorTip">
+                                        <s class="icon-error"></s>
+                                        <span>请输入11位正确手机号码</span>
+                                    </span>
+                                    <div class="record">
+                                    </div>
+                                </div>
+                                <span class="beizhu-info"></span>
+
+                            </div>
+
+                            <div class="item" id="flowItem">
+                                <span class="itemName">流量面值：</span>
+
+                                <div class="productList wideList">
+                                    <ul>
+                                        <li _val="1024" class="curr">1G<s></s><i class="salePic"></i></li>
+                                        <li _val="500">500M<s></s><i class="salePic"></i></li>
+                                        <li _val="300">300M<s></s><i class="salePic"></i></li>
+                                        <li _val="100">100M<s></s><i class="salePic"></i></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="flowMoney" id="flowMoney" value="1024">
+                            </div>
+
+                            <div class="clr"></div>
+                            <div class="item" id="llpriceItem">
+                                <span class="itemName">销售价格：</span>
+
+                                <ul class="salePrice">
+                                    <li class="curr">
+                                        <span class="flowArea">全国流量：</span>
+                                        <span class="flowDesc">支持2G/3G/4G，当月有效</span>
+                                        <span class="flowPrice"><i>45.5-49.5元</i></span>
+                                        <s></s>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="item" id="llsubmitItem">
+                                <span class="itemName"></span>
+                                <div>
+                                    <input type="button" clstag="pageclick|keycount|new_2015111910|1" class="submit" value="立即充值">
+                                    <a class="price-desc-tip" href="javascript:;"><i></i>价格说明<div class="desc-tips-box" style="width: 273px"><div
+                                            class="desc-tips-text">因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。</div><span
+                                            class="ui-tips-arrow" style="z-index:101"></span></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="detailContent fore3  hide ">
-                    <iframe width="803px" height="565px" scrolling="no" id="jfiframe" frameborder="0" src=""></iframe>
+                    <div style="width: 803px; height: 622px">
+                        套餐变更
+                    </div>
+                </div>
+                <div class="detailContent fore4  hide ">
+                    <div style="width: 803px; height: 565px">
+                        水电煤缴费
+                    </div>
                 </div>
 
-                <div class="detailContent fore4 hide">
+                <div class="detailContent fore5 hide">
                     <div class="cznav">
                         <span class="desc">玩家购物首选</span>
                         <ul class="fr cztype">
@@ -241,14 +423,16 @@
                             <li class="fore2 nomr" _type="qq">QQ充值<s></s></li>
                         </ul>
                     </div>
-                    <iframe width="753px" height="575px" scrolling="no" id="gameiframe" frameborder="0" src=""></iframe>
+                    <div style="width: 753px; height: 575px">
+
+                    </div>
                 </div>
 
             </div>
 
         </div>
 
-        <div id="sidebar" style="position: absolute; right: -56px; top: ;">
+        <div id="sidebar" style="position: absolute; right: -56px;">
             <a target="_blank" href="https://cschat-ccs.aliyun.com/index.htm?tntInstId=_0xvk1DM&scene=SCE00002799">
                 <div id="ddservice" onclick="goLineServer"><s></s><span>在线客服</span></div>
             </a>
@@ -302,15 +486,71 @@
             $("#productFace").hide();
             $('.productList').show();
         });
-        $(".productList ul li").click(function () {
+        $("#rechargeItem2 ul li").click(function () {
             var thisMoney = $(this).attr('_val');
-            $(".productList ul").find("li").removeClass('curr');
+            $("#rechargeItem2 ul").find("li").removeClass('curr');
             $(this).addClass('curr');
             $("#priceItem .salePrice span").text(thisMoney);
             $("#money").val(thisMoney)
-            // $('.productList').hide();
-            // $("#productFace").find("span").attr('_val', thisMoney).text(thisMoney);
-            // $("#productFace").show();
+        })
+
+        //话费充值的横向导航
+        $("#menu-hfcz li").click(function () {
+            var type = $(this).attr('_type');
+            $("#menu-hfcz li").removeClass("curr");
+            $(this).addClass("curr");
+            $(".cz-iframe").removeClass("show");
+            if(type === 'recharge') {
+                $("#cz-iframe1").addClass('show');
+                console.log("快速充值");
+            }else if(type === 'kami') {
+                $("#cz-iframe2").addClass('show');
+                console.log("充值卡")
+            }else if(type === 'many') {
+                $("#cz-iframe3").addClass('show');
+                console.log("多人充值")
+            }else {
+                console.log("其他")
+            }
+        })
+        // 充值卡的运营商切换
+        $("#kOperators .item-con span").click(function () {
+            var code = $(this).attr("brandcode");
+            $("#yunyinshang").val(code);
+            $("#kOperators .item-con span").removeClass("unit-cur");
+            $(this).addClass("unit-cur");
+        })
+        // 充值卡的充值卡面值切换
+        $("#kValue .item-con span").click(function () {
+            console.log(333)
+            var thisMoney = $(this).attr('_val');
+            $("#kValue .item-con").find("span").removeClass('unit-cur');
+            $(this).addClass('unit-cur');
+            $("#kPrice .item-con").text(thisMoney);
+            $("input[name='mianzhi']").val(thisMoney);
+        })
+        // 左侧导航切换
+        $(".leftMenu ul li").click(function () {
+            var type = $(this).attr('_type');
+            $(".leftMenu ul li").removeClass("curr");
+            $(this).addClass("curr");
+//            $(".bussContent>div").addClass("hide")
+            var data =  $(".bussContent>div");
+           for(var i=0; i<data.length; i++) {
+               if($(data[i]).hasClass(type)) {
+                   $(data[i]).removeClass("hide")
+               }else {
+                   $(data[i]).addClass("hide");
+               }
+           }
+        })
+        // 流量充值
+        $("#flowItem ul li").click(function () {
+            var thisMoney = $(this).attr('_val');
+            $("#flowItem ul").find("li").removeClass('curr');
+            $(this).addClass('curr');
+            $("#llpriceItem .flowPrice").text(thisMoney + "元");
+            $("#flowoney").val(thisMoney)
         })
     });
 </script>

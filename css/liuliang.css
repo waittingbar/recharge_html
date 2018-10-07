@@ -1,0 +1,790 @@
+@charset "UTF-8";
+#llchongzhi {
+    font-family: 'Microsoft YaHei';
+    padding-top: 47px
+}
+
+#llchongzhi .item {
+    /*overflow: hidden;*/
+    margin-bottom: 37px
+}
+
+#llchongzhi .item span.itemName {
+    float: left;
+    width: 83px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px
+}
+
+#llchongzhi .priceItem {
+    margin-bottom: 3px;
+    *margin-top: 20px
+}
+
+#llchongzhi .llsubmitItem {
+    margin-bottom: 0;
+    margin-top: 20px
+}
+
+#llchongzhi #llphoneitem {
+    margin-bottom: 18px;
+    height: 60px;
+    overflow: visible
+}
+
+#llchongzhi #areaItem {
+    margin-bottom: 18px
+}
+
+#llchongzhi #flowDesc {
+    margin-top: -30px
+}
+
+#llchongzhi .phoneContainer-1 {
+    position: relative;
+    height: 60px;
+    *z-index: 444
+}
+
+#llchongzhi .phoneContainer-1 input {
+    height: 36px;
+    line-height: 36px;
+    width: 418px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 26px
+}
+
+#llchongzhi .phoneContainer-1 .gray {
+    color: #ccc;
+    font-size: 14px
+}
+
+#llchongzhi .phoneContainer-1 .area {
+    position: absolute;
+    right: 100px;
+    top: 9px;
+    color: #999;
+    display: none
+}
+
+#llchongzhi .phoneContainer-1 .icon-right {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 0;
+    vertical-align: middle
+}
+
+#llchongzhi .phoneContainer-1 .icon-bookmark {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -26px;
+    top: 11px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer
+}
+
+#llchongzhi .phoneContainer-1 .icon-bookmark.hover {
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -52px
+}
+
+#llchongzhi .phoneContainer-1 .errorTip {
+    color: #e4393c;
+    padding-top: 4px;
+    display: none
+}
+
+#llchongzhi .phoneContainer-1 .errorTip .icon-error {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -78px;
+    vertical-align: middle
+}
+
+#llchongzhi .phoneContainer-1.numright input {
+    border: 1px solid #7abd54
+}
+
+#llchongzhi .phoneContainer-1.numright .area {
+    display: inline-block
+}
+
+#llchongzhi .phoneContainer-1.numerror input {
+    border: 1px solid #e4393c
+}
+
+#llchongzhi .phoneContainer-1.numerror .errorTip {
+    display: inline-block
+}
+
+#llchongzhi .record {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 88;
+    width: 438px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #FFF;
+    display: none;
+    top: 38px;
+    *top: 39px;
+    left: 0
+}
+
+#llchongzhi .record ul li {
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    font-size: 12px
+}
+
+#llchongzhi .record ul li:hover {
+    cursor: pointer;
+    background: #f3f3f3
+}
+
+#llchongzhi .record ul li span {
+    display: inline-block
+}
+
+#llchongzhi .record ul li .fore1 {
+    width: 162px;
+    font-size: 14px;
+    padding-left: 10px
+}
+
+#llchongzhi .record ul li .fore2 {
+    width: 236px
+}
+
+#llchongzhi .record ul li .fore2 span {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;width: 70px
+}
+
+#llchongzhi .record ul li .fore2 s {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -104px
+}
+
+#llchongzhi .record ul li .editing {
+    width: 189px
+}
+
+#llchongzhi .record ul li .editing input {
+    width: 60px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    margin-left: -10px
+}
+
+#llchongzhi .record ul li .fore3 s {
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -126px;
+    vertical-align: middle
+}
+
+#llchongzhi .record ul li .operate #cancel,#llchongzhi .record ul li .operate #saveLinkman {
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    color: #005ea7;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 12px
+}
+
+#llchongzhi .record ul .red {
+    color: #e4393c;
+    padding-left: 10px
+}
+
+#llchongzhi .beizhu-info {
+    color: #999;
+    padding-right: 5px
+}
+
+#llchongzhi .productList ul {
+    overflow: hidden;
+    font-family: 'Microsoft YaHei';
+    font-size: 18px;
+    color: #333;
+    width: 470px
+}
+
+#llchongzhi .productList ul li {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 93px;
+    border: 1px solid #ddd;
+    margin: 0 20px 20px 0;
+    position: relative;
+    cursor: pointer
+}
+
+#llchongzhi .productList ul li s {
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -151px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    _top: 20px;
+    _right: -1px
+}
+
+#llchongzhi .productList ul .curr {
+    border: 2px solid #e4393c;
+    height: 32px;
+    line-height: 32px;
+    width: 91px
+}
+
+#llchongzhi .productList ul .curr s {
+    display: inline-block
+}
+
+#llchongzhi .productList ul .nomr {
+    margin-right: 0
+}
+
+#llchongzhi .productList ul .nomb {
+    margin-bottom: 0
+}
+
+#llchongzhi #flowDesc .itemName {
+    height: 26px;
+    line-height: 26px
+}
+
+#llchongzhi #flowDesc div {
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    color: #999
+}
+
+#llchongzhi #flowItem {
+    overflow: visible;
+    padding-bottom: 37px;
+    *margin-bottom: 0
+}
+
+#llchongzhi #rechargeItem {
+    margin-bottom: 17px
+}
+
+#llchongzhi .gamePriceItem {
+    overflow: visible;
+    margin-bottom: 0;
+    z-index: 2
+}
+
+#llchongzhi .gameChongItem {
+    overflow: visible;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    *margin-top: 20px
+}
+
+#llchongzhi .gameChongItem .productList {
+    margin-bottom: 20px
+}
+
+#llchongzhi .gameChongItem .productList ul {
+    font-size: 14px
+}
+
+#llchongzhi .gameChooseItem {
+    overflow: visible;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 0;
+    height: 112px
+}
+
+#llchongzhi .gamePriceItem .wideList {
+    width: 620px;
+    float: left;
+    margin-bottom: 20px
+}
+
+#llchongzhi .gamePriceItem .wideList ul {
+    width: 620px
+}
+
+#llchongzhi .gamePriceItem .wideList ul .more {
+    font-size: 14px;
+    width: 83px;
+    background-color: #f8f8f8;
+    z-index: 4
+}
+
+#llchongzhi .gameChoose .wideList {
+    width: 620px;
+    float: left;
+    margin-bottom: 20px
+}
+
+#llchongzhi .gameChoose .wideList ul {
+    width: 620px
+}
+
+#llchongzhi .gameChoose .wideList ul .more {
+    font-size: 14px;
+    width: 83px
+}
+
+#llchongzhi .gameChoose .productList ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url(ellipsis.xml#ellipsis)
+}
+
+#llchongzhi .gameChoose .productList ul li.more {
+    overflow: visible;
+    background: #f8f8f8
+}
+
+#llchongzhi .gameChoose .wideList .more .moreProduct {
+    width: 123px;
+    font-size: 14px
+}
+
+#llchongzhi .gameChoose .wideList .more .moreProduct li {
+    height: 25px;
+    line-height: 25px;
+    zoom:1}
+
+#llchongzhi .gameChoose .wideList .more .moreProduct .selected {
+    background-color: #f3f3f3
+}
+
+#llchongzhi .gamePriceItem .wideList .more .moreProduct {
+    width: 93px;
+    left: -1px;
+    font-size: 14px;
+    _overflow: hidden
+}
+
+#llchongzhi .gamePriceItem .wideList .more .moreProduct li {
+    height: 25px;
+    line-height: 25px;
+    width: 83px;
+    zoom:1}
+
+#llchongzhi .gamePriceItem .wideList .more .moreProduct .selected {
+    background-color: #f3f3f3
+}
+
+#llchongzhi .gameChoose .wideList ul {
+    font-size: 14px
+}
+
+#llchongzhi .gameChoose .wideList ul .moreProduct {
+    z-index: 4;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none
+}
+
+#llchongzhi .wideList ul {
+    width: 730px;
+    *width: 660px;
+    overflow: visible
+}
+
+#llchongzhi .wideList .more {
+    width: 113px;
+    text-align: left;
+    padding-left: 10px;
+    position: relative
+}
+
+#llchongzhi .wideList .more .moreProduct {
+    width: 123px;
+    border: solid 1px #ddd;
+    position: absolute;
+    left: -1px;
+    border-top: none;
+    top: 34px;
+    background-color: #fff;
+    _overflow: hidden
+}
+
+#llchongzhi .wideList .more .moreProduct li {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+    width: 113px
+}
+
+#llchongzhi .wideList .more .moreProduct li:hover {
+    background: #f3f3f3
+}
+
+#llchongzhi .wideList .more .moreProduct .curr {
+    border: 2px solid #e4393c;
+    height: 24px
+}
+
+#llchongzhi .wideList .more.curr {
+    width: 113px
+}
+
+#llchongzhi .wideList .i-down {
+    height: 7px;
+    overflow: hidden;
+    font: 400 15px/15px consolas;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 16px
+}
+
+#llchongzhi .wideList .i-down s {
+    position: relative;
+    top: -7px;
+    *top: -8px;
+    text-decoration: none;
+    display: inline-block;
+    background: 0 0;
+    width: auto;
+    height: auto
+}
+
+#llchongzhi .salePrice {
+    height: 36px;
+    line-height: 36px;
+    color: #e4393c;
+    font-size: 25px
+}
+
+#llchongzhi .sms {
+    margin-bottom: 10px;
+    margin-top: -35px
+}
+
+#llchongzhi .sms .fore {
+    width: 345px;
+    overflow: hidden
+}
+
+#llchongzhi .sms label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    overflow: hidden;
+    float: left
+}
+
+#llchongzhi .sms #username {
+    display: none
+}
+
+#llchongzhi .sms .username {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #aaa #ddd #ddd #aaa;
+    height: 18px;
+    line-height: 18px;
+    width: 70px;
+    margin: 0 2px
+}
+
+#llchongzhi .sms textarea {
+    width: 330px;
+    height: 52px;
+    display: none;
+    cursor: text;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    line-height: 24px;
+    padding: 0 5px;
+    margin-right: 0;
+    resize: none
+}
+
+#llchongzhi .sms .gray {
+    color: #999
+}
+
+#llchongzhi #sms {
+    vertical-align: middle;
+    margin-left: 0
+}
+
+#llchongzhi .submit {
+    font-size: 18px;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    width: 136px;
+    height: 36px;
+    background: #e54043;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    _line-height: 26px;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+#llchongzhi .disabled {
+    background: #EDEDED;
+    border: 1px solid #DDD;
+    color: #9A9A9A
+}
+
+.gameChoose {
+    float: left
+}
+
+.gameChoose .zimu {
+    height: 36px;
+    margin-bottom: 20px
+}
+
+.gameChoose .zimu li {
+    float: left;
+    width: 20px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #f2f9ff;
+    font-size: 12px;
+    color: #333;
+    font-family: 'Microsoft YaHei'
+}
+
+.gameChoose .zimu li:hover {
+    background: #b7d4ed;
+    cursor: pointer
+}
+
+.gameChoose .zimu li.no-game-data {
+    color: #b9ced5
+}
+
+.gameChoose .zimu li.no-game-data:hover {
+    background: #f2f9ff;
+    cursor: default
+}
+
+.gameChoose .zimu li.curr {
+    background: #b7d4ed
+}
+
+.gameChoose .zimu .hot {
+    width: 36px
+}
+
+#qq {
+    display: none
+}
+
+.red {
+    color: #e4393c
+}
+
+#llchongzhi #game .gameChooseItem {
+    *height: 168px
+}
+
+/*.price-desc-tip {*/
+    /*display: inline-block;*/
+    /**display: inline;*/
+    /**zoom:1;vertical-align: middle;*/
+    /*height: 20px;*/
+    /*background: url(../assets/img/llindex.png) 0 0 no-repeat;*/
+    /*line-height: 20px;*/
+    /*margin-left: 10px;*/
+    /*color: #005ea7;*/
+    /*font-size: 12px*/
+/*}*/
+
+.price-desc-tip:hover {
+    color: #005ea7
+}
+
+.price-desc-tip i {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    text-decoration: none
+}
+
+#llchongzhi #flowItem li.hasSale i.salePic {
+    display: inline-block;
+    *display: inline;
+    *zoom:1}
+
+#llchongzhi #flowItem i.salePic {
+    background: url(../assets/img/llindex.png) 0 0 no-repeat;
+    background-position: 0 -173px;
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    display: none;
+    top: -12px;
+    right: -12px
+}
+
+#llchongzhi #flowItem li.curr i.salePic {
+    top: -13px;
+    right: -13px
+}
+
+#llchongzhi #llpriceItem {
+    overflow: visible
+}
+
+#llchongzhi #llpriceItem .salePrice {
+    font-size: 12px;
+    height: auto;
+    width: 584px;
+    margin-left: 83px;
+    overflow: hidden
+}
+
+#llchongzhi #llpriceItem .salePrice li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    height: 36px;
+    line-height: 36px;
+    _height: 30px;
+    _line-height: 30px;
+    padding-left: 6px;
+    _padding-top: 6px;
+    color: #666;
+    position: relative
+}
+
+#llchongzhi #llpriceItem .salePrice li .flowArea,#llchongzhi #llpriceItem .salePrice li .flowDesc,#llchongzhi #llpriceItem .salePrice li .flowPrice,#llchongzhi #llpriceItem .salePrice li .flowSaleDesc,#llchongzhi #llpriceItem .salePrice li .flowSalePic {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;height: 24px;
+    line-height: 24px
+}
+
+#llchongzhi #llpriceItem .salePrice li .flowSaleDesc,#llchongzhi #llpriceItem .salePrice li .flowSalePic {
+    background-color: #ffe8e8;
+    color: #e4393c;
+    text-align: center
+}
+
+#llchongzhi #llpriceItem .salePrice li .flowSalePic {
+    width: 25px
+}
+
+#llchongzhi #llpriceItem .salePrice li .flowSaleDesc {
+    padding-right: 10px;
+    margin-left: -6px
+}
+
+#llchongzhi #llpriceItem .salePrice li .flowArea {
+    margin-left: 6px;
+    color: #333;
+    font-weight: 700
+}
+
+#llchongzhi #llpriceItem .salePrice li .marginleft0 {
+    margin-left: 0
+}
+
+#llchongzhi #llpriceItem .salePrice li .flowPrice {
+    color: #c81623;
+    font-weight: 700;
+    float: right;
+    margin: 6px 10px 0 0;
+    *margin-top: -30px;
+    _margin-top: -25px
+}
+
+#llchongzhi #llpriceItem .salePrice li s {
+    background: url(../assets/img/llindex.png) no-repeat;
+    background-position: 0 -151px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    _bottom: -3px
+}
+
+#llchongzhi #llpriceItem .salePrice li:hover {
+    cursor: pointer
+}
+
+#llchongzhi #llpriceItem .salePrice li.curr {
+    border: 2px solid #e4393c
+}
+
+#llchongzhi #llpriceItem .salePrice li.curr .flowSaleDesc,#llchongzhi #llpriceItem .salePrice li.curr .flowSalePic {
+    background-color: #c81623;
+    color: #fff
+}
+
+#llchongzhi #llpriceItem .salePrice li.curr s {
+    display: inline-block;
+    *display: inline;
+    *zoom:1}
+
+#llchongzhi .wideList .more {
+    z-index: 9
+}
+
+#llchongzhi .wideList .more .moreProduct {
+    z-index: 10
+}
+
+#llchongzhi .wideList .more .moreProduct .samllSales s {
+    height: 20px;
+    width: 19px;
+    background: url(../assets/img/llindex.png) 0 0 no-repeat;
+    background-position: 0 -204px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;vertical-align: middle;
+    margin: 0 20px 4px 0
+}

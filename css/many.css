@@ -1,0 +1,429 @@
+@charset "UTF-8";input::-ms-clear {
+    display: none
+}
+
+input::-ms-reveal {
+    display: none
+}
+
+#many {
+    padding-top: 47px;
+    font-family: 'Microsoft YaHei'
+}
+
+#many .item {
+    overflow: hidden;
+    margin-bottom: 37px
+}
+
+#many .item span.itemName {
+    width: 83px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    float: left;
+    vertical-align: top
+}
+
+#many #priceItem {
+    margin-bottom: 3px
+}
+
+#many #submitItem {
+    margin-bottom: 0;
+    margin-top: 12px
+}
+
+#many #phoneitem2 {
+    margin-bottom: 18px;
+    overflow: visible
+}
+
+#many #phoneitem2 .itemName {
+    display: inline-block
+}
+
+#many #phoneitem2 ul.links {
+    width: 600px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1}
+
+#many #phoneitem2 ul.links li {
+    position: relative
+}
+
+#many .phoneContainer-2 {
+    position: relative;
+    height: 50px
+}
+
+#many .phoneContainer-2 input {
+    height: 28px;
+    line-height: 28px;
+    width: 288px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 18px
+}
+
+#many .phoneContainer-2 .gray {
+    color: #ccc;
+    font-size: 14px
+}
+
+#many .phoneContainer-2 .area {
+    position: absolute;
+    right: 90px;
+    top: 6px;
+    color: #999;
+    display: none
+}
+
+#many .phoneContainer-2 .icon-right {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 0;
+    vertical-align: middle
+}
+
+#many .phoneContainer-2 .icon-bookmark {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -26px;
+    top: 8px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer
+}
+
+#many .phoneContainer-2 .hover {
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -52px
+}
+
+#many .phoneContainer-2 .errorTip {
+    color: #e4393c;
+    display: none
+}
+
+#many .phoneContainer-2 .errorTip .icon-error {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -78px;
+    vertical-align: middle
+}
+
+#many .phoneContainer-2.numright input {
+    border: 1px solid #7abd54
+}
+
+#many .phoneContainer-2.numright .area {
+    display: inline-block
+}
+
+#many .phoneContainer-2.numerror input {
+    border: 1px solid #e4393c
+}
+
+#many .phoneContainer-2.numerror .errorTip {
+    display: inline-block
+}
+
+#many .addLink {
+    padding-left: 83px
+}
+
+#many #addLink {
+    height: 50px
+}
+
+#many #addLink input {
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 165px;
+    border: 1px dashed #d2d2d2;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: #b8b8b8;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+#many #addLink span {
+    color: #999
+}
+
+#many .record {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 88;
+    width: 308px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #FFF;
+    display: none;
+    top: 30px;
+    *top: 32px;
+    left: 0
+}
+
+#many .record ul li {
+    height: 30px;
+    line-height: 30px;
+    color: #333
+}
+
+#many .record ul li:hover {
+    cursor: pointer;
+    background: #f3f3f3
+}
+
+#many .record ul li span {
+    display: inline-block
+}
+
+#many .record ul li .fore1 {
+    width: 132px;
+    font-size: 14px;
+    padding-left: 10px
+}
+
+#many .record ul li .fore2 {
+    width: 134px
+}
+
+#many .record ul li .fore2 span {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;width: 70px
+}
+
+#many .record ul li .fore2 s {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -104px
+}
+
+#many .record ul li .editing {
+    width: 87px
+}
+
+#many .record ul li .editing input {
+    width: 60px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 4px 10px;
+    border: none;
+    margin-left: -10px
+}
+
+#many .record ul li .fore3 s {
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -126px;
+    vertical-align: middle
+}
+
+#many .record ul li .operate #cancel,#many .record ul li .operate #saveLinkman {
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    color: #005ea7;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 12px
+}
+
+#many .record .red {
+    color: #e4393c;
+    padding-left: 10px
+}
+
+#many .productList {
+    position: relative;
+    padding-left: 10px;
+    width: 126px
+}
+
+#many .productList .mianzhi {
+    font-family: 'Microsoft YaHei Bold','Microsoft YaHei';
+    display: inline-block;
+    width: 104px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 7px 10px;
+    color: #333;
+    border: 1px solid #ddd;
+    cursor: pointer
+}
+
+#many .productList .i-down {
+    height: 7px;
+    overflow: hidden;
+    font: 400 15px/15px consolas;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 13px
+}
+
+#many .productList .i-down s {
+    position: relative;
+    top: -7px;
+    text-decoration: none;
+    cursor: pointer
+}
+
+#many .productList .moreProduct {
+    width: 124px;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 10px;
+    border-top: none;
+    top: 27px;
+    z-index: 1;
+    background-color: #fff
+}
+
+#many .productList .moreProduct li {
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+    width: 113px;
+    cursor: pointer
+}
+
+#many .productList .moreProduct li:hover {
+    background: #f3f3f3
+}
+
+#many .productPrice {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 8px;
+    color: #b4b4b4;
+    width: 120px
+}
+
+#many .productPrice span {
+    font-weight: 700;
+    width: 55px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1}
+
+#many .productPrice s.delete {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;width: 9px;
+    height: 9px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -151px;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+#many .salePrice {
+    height: 36px;
+    line-height: 36px;
+    color: #e4393c;
+    font-size: 25px
+}
+
+#many .salePrice span {
+    color: #999;
+    font-size: 12px;
+    position: relative;
+    top: -4px
+}
+
+#many .salePrice s.warn {
+    width: 16px;
+    height: 14px;
+    background: url(../assets/img/many.png) no-repeat;
+    background-position: 0 -170px;
+    position: relative;
+    top: -2px;
+    display: none
+}
+
+#many .salePrice .errorMsg {
+    display: none
+}
+
+#many .salePrice #totalPrice {
+    display: inline-block;
+    *display: inline
+}
+
+#many .submit {
+    font-size: 18px;
+    font-family: 'Microsoft YaHei Bold','Microsoft YaHei';
+    font-weight: 700;
+    width: 136px;
+    height: 36px;
+    background: #e54043;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    _line-height: 26px;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+#many .disabled {
+    background: #EDEDED;
+    border: 1px solid #DDD;
+    color: #9A9A9A
+}
+
+.red {
+    color: #e4393c
+}
+
+/*.price-desc-tip {*/
+    /*display: inline-block;*/
+    /**display: inline;*/
+    /**zoom:1;vertical-align: middle;*/
+    /*height: 20px;*/
+    /*background: url(../assets/img/presale-icon.png) 0 0 no-repeat;*/
+    /*line-height: 20px;*/
+    /*margin-left: 10px;*/
+    /*color: #005ea7;*/
+    /*font-size: 12px*/
+/*}*/
+
+.price-desc-tip:hover {
+    color: #005ea7
+}
+
+.price-desc-tip i {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    text-decoration: none
+}
