@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菲速充首页</title>
+    <link rel="stylesheet" href="./css/recharge.css">
+</head>
+<body>
+<div class="recharge-content">
+    <div class="recharge-header">
+        <div class="m-w recharge-header-c clearfix">
+            <ul class="fl">
+                <li class="index">
+                    <a href="./recharge.html">菲速充首页</a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li class="order">
+                    <a href="/orderList">我的订单</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="w recharge-logo">
+        <s class="fsc-logo"></s>
+    </div>
+    <div class="nav">
+        <div class="w">
+            <div id="logo">
+                <div class="fore1">菲速充<span>.</span>充值</div>
+                <div class="fore2">www.feisuchong.com</div>
+            </div>
+            <ul>
+                <li class="curr">
+                    <a href="/">首页</a>
+                </li>
+                <!--<li class="fore6">-->
+                <!--<a href="/" target="_blank">我的营业厅</a>-->
+                <!--</li>-->
+                <!--<li class="fore5">-->
+                <!--<a href="/" target="_blank">充值帮助</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="w">
+        <div class="content">
+            <div class="fl leftMenu">
+                <ul>
+                    <li class="fore1 bussType  curr"><s></s>话费充值</li>
+                    <li class="fore2 bussType"><s></s>流量充值</li>
+                    <li class="fore5 bussType"><s></s>套餐变更</li>
+                    <li class="fore3 bussType"><s></s>水电煤缴费</li>
+                    <li class="fore4 bussType"><s></s>游戏充值</li>
+                </ul>
+            </div>
+
+            <div class="fr bussContent">
+                <div class="detailContent fore1 ">
+                    <div class="cznav">
+                        <s class="renzheng"></s>
+                        <span class="desc">品质保证&nbsp;&nbsp;安全快捷</span>
+                        <ul class="fr cztype">
+                            <li class="fore1  curr " _type="recharge">话费快充<s></s></li>
+                            <li class="fore10 " _type="kami">
+                                充值卡
+                                <s></s>
+                            </li>
+                            <li class="fore2 " _type="many">多人充值<s></s></li>
+                            <li class=" " _type="fixtime">
+                                定期充值
+                                <i></i>
+                                <s></s>
+                            </li>
+                        </ul>
+                    </div>
+                    <p style="font-size: 16px;margin-top: 10px;">订单完成后订单详情页可查看商家信息</p>
+                    <div class="cz-iframe show" _flag="1">
+                        <div style="width: 753px; height: 492px">
+                            <div id="chongzhi">
+                                <div class="item" id="phoneitem">
+                                    <span class="itemName">手机号码：</span>
+
+                                    <div class="fl phoneContainer-1" _type="recharge">
+                                        <input type="text" class="mobile gray" maxlength="11" autocomplete="off" value="请输入手机号"><br>
+                                        <span class="area">
+                                            <s class="icon-right"></s>
+                                            <span>重庆移动</span>
+                                        </span>
+                                        <s class="icon-bookmark"></s>
+                                        <span class="errorTip">
+                                            <s class="icon-error"></s>
+                                            <span>
+                                                请输入11位正确手机号码
+                                            </span>
+                                        </span>
+                                        <div class="record"></div>
+                                    </div>
+                                    <span class="beizhu-info"></span>
+                                </div>
+                                <div class="item hide">
+                                    <span class="itemName">到账时间：</span>
+
+                                    <div class="productList" id="fillType">
+                                        <ul>
+                                            <li class="nomb curr" _val="0">快充</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="item" id="rechargeItem2">
+                                    <span class="itemName">充值面值：</span>
+
+                                    <div class="productList">
+                                        <ul>
+                                            <li _val="300">300元<s></s></li>
+                                            <li _val="100" class="curr">100元<s></s></li>
+                                            <li _val="50">50元<s></s></li>
+                                            <li class="nomr" _val="30">30元<s></s></li>
+                                            <li _val="500">500元<s></s></li>
+                                            <li _val="200">200元<s></s></li>
+                                            <li _val="20">20元<s></s></li>
+                                            <li _val="10">10元<s></s></li>
+                                        </ul>
+                                    </div>
+                                    <input type="hidden" id="money" value="100">
+                                </div>
+
+                                <div class="item" id="priceItem">
+                                    <span class="itemName">销售价格：</span>
+                                    <div class="salePrice">
+                                        <span>98.00-100.00</span>元
+                                    </div>
+                                </div>
+                                <div class="item sms">
+                                    <span class="itemName"></span>
+
+                                    <div>
+                                        <div class="fore">
+                                            <label for="sms">
+                                                <input type="checkbox" class="fl" id="sms">给TA捎句话吧
+
+                                            </label>
+                                            <div class="fr " id="username">
+                                                <span>您的姓名：</span>
+                                                <input type="text" value="选填" class="username gray" maxlength="5">
+                                            </div>
+                                        </div>
+                                        <textarea maxlength="34" id="inputMessageArea" class="gray">请输入你想对TA说的话（充值成功后会短信发至充值手机），最多34字哦</textarea>
+                                    </div>
+                                </div>
+                                <div class="item" id="submitItem2">
+                                    <span class="itemName"></span>
+                                    <div>
+                                        <input type="button" class="submit" value="立即充值"
+                                               clstag="pageclick|keycount|new_201511197|1">
+                                        <a class="price-desc-tip" href="javascript:;"
+                                           data-tips="因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，商品售价以本结算页商品价格为准；如有疑问，请您立即联系销售商咨询。"><i></i>价格说明</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--<iframe width="753px" height="492px" scrolling="no" id="fast-cziframe" frameborder="0" src="//chongzhi.jd.com/iframe_fast.action"></iframe>-->
+                    </div>
+                    <div class="cz-iframe"></div>
+                    <div class="cz-iframe"></div>
+                    <div class="cz-iframe"></div>
+                </div>
+
+                <div class="detailContent fore2  hide ">
+                    <div class="cznav">
+                        <s class="renzheng"></s>
+                        <span class="desc">品质保证&nbsp;&nbsp;安全快捷</span>
+                    </div>
+                    <p style="font-size: 16px;margin-top: 10px;">订单完成后订单详情页可查看商家信息</p>
+                    <iframe width="753px" height="492px" scrolling="no" id="flowiframe" frameborder="0" src=""></iframe>
+                </div>
+                <div class="detailContent fore5  hide ">
+                    <iframe width="803px" height="622px" scrolling="no" id="packageiframe" frameborder="0"
+                            src=""></iframe>
+                </div>
+                <div class="detailContent fore3  hide ">
+                    <iframe width="803px" height="565px" scrolling="no" id="jfiframe" frameborder="0" src=""></iframe>
+                </div>
+
+                <div class="detailContent fore4 hide">
+                    <div class="cznav">
+                        <span class="desc">玩家购物首选</span>
+                        <ul class="fr cztype">
+                            <li class="fore1 curr" _type="game">点卡充值<s></s></li>
+                            <li class="fore2 nomr" _type="qq">QQ充值<s></s></li>
+                        </ul>
+                    </div>
+                    <iframe width="753px" height="575px" scrolling="no" id="gameiframe" frameborder="0" src=""></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div id="sidebar">
+    <a target="_blank" href="https://cschat-ccs.aliyun.com/index.htm?tntInstId=_0xvk1DM&scene=SCE00002799">
+        <div id="ddservice" onclick="goLineServer"><s></s><span>在线客服</span></div>
+    </a>
+    <div id="serviceTel">
+        <s></s><b class="arrow"></b>
+        <div class="hotTel">
+            <p>1234567890&nbsp;&nbsp;充值客服</p>
+            <p>1234567890&nbsp;&nbsp;菲速充客服</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/recharge.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".phoneContainer-1 input").focus(function () {
+            var value = $(this).val();
+            if(isNaN(value)) {
+                $(this).val('');
+                $(this).removeClass('gray');
+            }else {
+                if(value.length != 11) {
+                    $(".phoneContainer-1 .errorTip").show();
+                }
+            }
+        });
+        $(".phoneContainer-1 input").blur(function () {
+            var value = $(this).val();
+            if(isNaN(value)) {
+                $(this).val('请输入手机号');
+                $(this).addClass('gray');
+            }else {
+                if(value.length != 11) {
+                    $(".phoneContainer-1 .errorTip").show();
+                }
+            }
+        });
+        $("#productFace a").click(function () {
+            $("#productFace").hide();
+            $('.productList').show();
+        });
+        $(".productList ul li").click(function () {
+            var thisMoney = $(this).attr('_val');
+            $(".productList ul").find("li").removeClass('curr');
+            $(this).addClass('curr');
+            $("#priceItem .salePrice span").text(thisMoney);
+            $("#money").val(thisMoney)
+            // $('.productList').hide();
+            // $("#productFace").find("span").attr('_val', thisMoney).text(thisMoney);
+            // $("#productFace").show();
+        })
+    });
+</script>
+<script type="text/javascript" charset="utf-8"
+        src="https://gw.alipayobjects.com/os/rmsportal/xsxusXNIcXwiGqtNiyOd.js"
+        chat_url="https://cschat-ccs.aliyun.com/index.htm"
+        logo_src="https://i.alipayobjects.com/e/201401/1tdi7nR70h.png"
+        logo_position="rt"
+        tntInstId="_0xvk1DM&scene=SCE00002799">
+</script>
+</body>
+</html>
