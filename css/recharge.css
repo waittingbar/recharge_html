@@ -1754,3 +1754,64 @@ a:active,a:focus,button::-moz-focus-inner,input[type=button]::-moz-focus-inner,i
     cursor: pointer;
 }
 
+/* 我的订单*/
+.h100 {
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+.recharge-order-content {
+    /*background-color: #f5f5f5;*/
+    padding-top: 20px;
+    /*height: 100%;*/
+}
+.recharge-order-nav {
+    padding: 15px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.recharge-order-search {
+
+}
+.recharge-order-search input {
+    float: left;
+    width: 158px;
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 5px 3px;
+    border: 1px solid #ccc;
+}
+.recharge-order-search a{
+    float: left;
+    width: 52px;
+    height: 23px;
+    color: #333;
+    line-height: 23px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-left: 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.recharge-order-box {
+    padding: 20px;
+    background-color: #fff;
+}
+.recharge-order-table {
+    border-spacing: 0;
+    width: 100%;
+    border-top: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+.recharge-order-table tr {
+    /*padding: 5px;*/
+    border-bottom: 1px solid #eee;
+}
+.recharge-order-table th, .recharge-order-table td {
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid #e3e3e3;
+    /*border-right:1px solid #e3e3e3;*/
+}
